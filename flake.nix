@@ -15,6 +15,11 @@
               python312
               uv
             ];
+
+            shellHook = ''
+              export PATH="$HOME/.local/share/uv/tools/add-staves/bin:$PATH"
+              export UV_PUBLISH_TOKEN=$(1pass vtmc24db6eeruutm6kh5cqwnwy "api token")
+            '';
           };
         }
     );

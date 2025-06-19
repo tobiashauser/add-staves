@@ -1,13 +1,17 @@
 [project]
 name = "add-staves"
-version = "0.1.0"
+version = "0.2.10"
 description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "Tobias Hauser", email = "git@tobiashauser.org" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pypdf>=5.6.0",
+    "rich>=14.0.0",
+    "typer>=0.16.0",
+]
 
 [project.scripts]
 add-staves = "add_staves:main"
