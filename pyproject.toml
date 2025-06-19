@@ -1,0 +1,17 @@
+[project]
+name = "add-staves"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Tobias Hauser", email = "git@tobiashauser.org" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+add-staves = "add_staves:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
